@@ -2,6 +2,7 @@ body{
 	padding: 0;
 	margin: 0;
 	background-color: #357FBD;
+	font-family: Optima, Segoe, "Segoe UI", sans-serif;
 }
 #small_logo{
 	display: none;
@@ -73,11 +74,9 @@ body{
 	display: inline-block;
 	padding: 20px 20px;
 	margin: 0px 3px;
-		font-family: Optima, Segoe, "Segoe UI", sans-serif;
-		font-weight: bold;
+	font-family: Optima, Segoe, "Segoe UI", sans-serif;
+	font-weight: bold;
 }
-
-
 
 p{
 	width: 200px;
@@ -124,5 +123,34 @@ a:hover{
 #jacksonBackground{
 	height: auto;
 	width: 100%;
-	
 }
+
+div.updates_sign_up{
+height: 45px;
+	width: 300px;
+	transition: width 1s ease-in, height 1s ease-in, background-color 1s;
+}
+
+#form_wrapper{
+	display: none;
+}
+
+#close_button{
+	display: none;
+}
+
+.ExpandBox #form_wrapper{
+	display: block;
+}
+
+.ExpandBox #close_button{
+	display: inline-block;
+}
+
+div.updates_sign_up.ExpandBox{
+	background-color: #357FBD;
+	height: 300px;
+	width: 300px;
+}
+
+
