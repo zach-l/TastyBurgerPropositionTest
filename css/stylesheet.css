@@ -1,8 +1,13 @@
 body{
 	padding: 0;
 	margin: 0;
-	background-color: #357FBD;
+	background-color: #333333;
 	font-family: Optima, Segoe, "Segoe UI", sans-serif;
+	color: white;
+}
+
+img{
+	display: block	
 }
 #small_logo{
 	display: none;
@@ -52,7 +57,7 @@ body{
 .nav_bar.FixedAtTheTop{
 	width: 100%;
 	top: 0;	
-	background-color: #357FBD;
+	background-color: #333333;
 	border-bottom: 2px solid #FF7439;
 }
 
@@ -79,7 +84,7 @@ body{
 }
 
 p{
-	width: 200px;
+	width: 80%;
 }
 
 @media(max-width: 770px){
@@ -120,15 +125,11 @@ a:hover{
 	color: #FF7439;
 }
 
-#jacksonBackground{
+.MainPageImg{
 	height: auto;
 	width: 100%;
-}
-
-div.updates_sign_up{
-height: 45px;
-	width: 300px;
-	transition: width 1s ease-in, height 1s ease-in, background-color 1s;
+	margin: 0;
+	padding: 0;
 }
 
 #form_wrapper{
@@ -139,6 +140,24 @@ height: 45px;
 	display: none;
 }
 
+div.updates_sign_up{
+	position: fixed;
+	bottom:5px; 
+	right:5px; 
+	border: solid 2px white; 
+	border-radius: 25px;
+	height: 45px;
+	width: 300px;
+	background-color: #333333;
+	transition: width 1s ease-in, height 1s ease-in;
+}
+
+div.updates_sign_up.ExpandBox{
+	background-color: #333333;
+	height: 300px;
+	width: 300px;
+}
+
 .ExpandBox #form_wrapper{
 	display: block;
 }
@@ -147,10 +166,19 @@ height: 45px;
 	display: inline-block;
 }
 
-div.updates_sign_up.ExpandBox{
-	background-color: #357FBD;
-	height: 300px;
-	width: 300px;
+div.contents{
+	padding: 3% 10%;
+}
+
+#footer{
+	border-top: solid 2px white;
+}
+#footer li{
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 0px 3px;
+	font-family: Optima, Segoe, "Segoe UI", sans-serif;
+	font-weight: bold;
 }
 
 
