@@ -2,24 +2,17 @@ window.onload = function() {
 	fixedAtTheTop();
 	animateSignUpBox();
 	function fixedAtTheTop(){
-		function getScrollTop() {
+		//Grabs the current pageYOffset value 
+		function getScrollValue() {
 			if (typeof window.pageYOffset !== 'undefined' ) {
-			  // Most browsers
 			  return window.pageYOffset;
 			}
-
-			var d = document.documentElement;
-			if (d.clientHeight) {
-			  // IE in standards mode
-			  return d.scrollTop;
-			}
-
-			// IE in quirks mode
-			return document.body.scrollTop;
 		}	
+		/*Adds and removes the "FixedAtTheTop" class to all of the elements of the navigation bar making allowing it to be 
+		animated and fixed at the top of the page*/
 		window.onscroll = function() {
 			var navBar = document.getElementById('nav_bar'),
-				scroll = getScrollTop(),
+				scroll = getScrollValue(),
 				logo = document.getElementById('logo'),
 				windowWidth= window.innerWidth;
 				smallLogo = document.getElementById('small_logo');
@@ -40,6 +33,7 @@ window.onload = function() {
 		}
 	}
 	
+	//Adds and removes the "ExpandBox" class to the sign up box allowing it to be animated when clicked on.
 	function animateSignUpBox(){		
 		var signUpBox = document.getElementById('updates_sign_up');
 		var signUp = document.getElementById('sign_up');
