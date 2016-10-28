@@ -6,7 +6,8 @@
 		<title>Tasy Burger -Home Page</title>
 	</head>
 	<body>
-		<script src="..\js\fixedAtTheTop.js"></script>
+	<script src="..\js\common.js"></script>
+
 		<?php include_once('navigation_bar.php'); ?>
 		<div id="container_body">
 
@@ -23,5 +24,6 @@
 
 			Vim tantas patrioque ex, congue torquatos quo ea, vel et vidisse scripta voluptatibus. Pro no possim abhorreant, autem suscipiantur eam no. Et sit ridens democritum reprimique, no nusquam incorrupte sed. Id nec nostro facete, omnium minimum no mei.</p>
 		</div>
+		<?php include_once('sign_up_box.php'); ?>
 	</body>
 </html>
